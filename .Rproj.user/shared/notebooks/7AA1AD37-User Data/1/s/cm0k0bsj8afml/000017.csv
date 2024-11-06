@@ -1,0 +1,10 @@
+"0","write.csv(user_data, ""~/User_Data.csv"", row.names = F)
+"
+"2","Warning in file(file, ifelse(append, ""a"", ""w"")) :"
+"2","
+ "
+"2"," cannot open file 'C:/Users/ujean/OneDrive/Documents/User_Data.csv': Permission denied
+"
+"2","Error in file(file, ifelse(append, ""a"", ""w"")) : 
+  cannot open the connection
+"

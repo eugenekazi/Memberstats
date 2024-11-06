@@ -1,0 +1,33 @@
+{
+    "id": "5B99B6CC",
+    "path": "~/Data Science/Data Analytics Club/User Data.Rmd",
+    "project_path": "User Data.Rmd",
+    "type": "r_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": true,
+    "created": 1730511447273.0,
+    "source_on_save": true,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "33,1",
+        "scrollLine": "0",
+        "last_setup_crc32": "",
+        "rmdVisualMode": "false",
+        "rmdVisualWrapConfigured": "true",
+        "docOutlineVisible": "1",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "237:0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1730853767,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1730923987773,
+    "read_only": false,
+    "read_only_alternatives": []
+}

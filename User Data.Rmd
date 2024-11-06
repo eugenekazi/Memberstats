@@ -1,0 +1,35 @@
+---
+title: "Club Member Information"
+author: "Eugene Kazi"
+date: "2024-11-02"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(tidyverse)
+```
+
+```{r echo=FALSE}
+full_data <- read_csv("C:/Users/ujean/Downloads/user_download_members_uhd_111172529.csv")
+shirt_sizes <- read_csv("First Interest Meeting  - Sheet1.csv")
+
+full_data$"Account Type" <- as.factor(full_data$"Account Type")
+user_data <- full_data %>% select("First Name", "Last Name", "Email", "Account Type", "Signup Date")
+print.data.frame(user_data)
+
+shirt_sizes <- shirt_sizes %>% rename("Name" = "First Interest Meeting", "Email" = "...2", "User Identifier" = "...3", "Shirt Size" = "...4")
+shirt_sizes <- shirt_sizes[c(-1,-2),]
+shirt_sizes$"User Identifier" <- as.numeric(shirt_sizes$"User Identifier")
+shirt_sizes$"Shirt Size" <- as.factor(shirt_sizes$"Shirt Size")
+
+#Imported and cleaned data
+user_data <- shirt_sizes %>% select('Email', 'Shirt Size') %>% right_join(user_data, join_by('Email')) %>% select("First Name", "Last Name", "Email", "Shirt Size", "Signup Date", "Account Type")
+
+#user_data %>% filter(is.na(`Shirt Size`)== F) %>% count()
+#I used this to check if I got all the shirt sizes, however I am missing a couple. I am assuming there has to be a discrepancy between emails somewhere.
+
+write.csv(user_data, "~/User_Data.csv", row.names = F)
+```
