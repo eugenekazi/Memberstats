@@ -5,7 +5,7 @@
     "type": "r_markdown",
     "hash": "0",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1730511447273.0,
     "source_on_save": true,
     "relative_order": 1,
@@ -13,7 +13,7 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "33,1",
+        "cursorPosition": "35,0",
         "scrollLine": "0",
         "last_setup_crc32": "",
         "rmdVisualMode": "false",
@@ -23,11 +23,11 @@
         "rmdVisualModeLocation": "237:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1730853767,
+    "lastKnownWriteTime": 1730948142,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1730923987773,
+    "last_content_update": 1730948143089,
     "read_only": false,
     "read_only_alternatives": []
 }

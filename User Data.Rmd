@@ -17,6 +17,7 @@ full_data <- read_csv("C:/Users/ujean/Downloads/user_download_members_uhd_111172
 shirt_sizes <- read_csv("First Interest Meeting  - Sheet1.csv")
 
 full_data$"Account Type" <- as.factor(full_data$"Account Type")
+full_data$'Signup Date' <- substr(full_data$`Signup Date`, 1, 10)
 user_data <- full_data %>% select("First Name", "Last Name", "Email", "Account Type", "Signup Date")
 print.data.frame(user_data)
 
@@ -31,5 +32,5 @@ user_data <- shirt_sizes %>% select('Email', 'Shirt Size') %>% right_join(user_d
 #user_data %>% filter(is.na(`Shirt Size`)== F) %>% count()
 #I used this to check if I got all the shirt sizes, however I am missing a couple. I am assuming there has to be a discrepancy between emails somewhere.
 
-write.csv(user_data, "~/User_Data.csv", row.names = F)
+write.csv(user_data, "User_Data.csv", row.names = F)
 ```
